@@ -4,6 +4,7 @@ name: Node.js CI
 on:
   push:
     # 当你 git push origin main 触发脚本
+    # 分支是 main
     branches: [ main ]
 
 
