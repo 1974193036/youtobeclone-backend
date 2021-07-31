@@ -3,6 +3,7 @@ name: Node.js CI
 
 on:
   push:
+    # 当你 git push origin main 触发脚本
     branches: [ main ]
 
 
@@ -36,7 +37,7 @@ jobs:
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
           cd /root/youtubeclone-backend
-          git pull origin master
+          git pull origin main
           npm install --production
           npm run stop
           npm run start
